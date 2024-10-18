@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script src="./scripts/firebase.js" type="module"></script>
+    <script src="./scripts/login.js" defer></script>
+  </head>
+  <body class="flex items-center justify-center w-full h-screen border">
+    <div class="container mx-auto max-w-[500px]">
+      <form action="" class="border p-4 my-12 flex flex-col gap-4">
+        <h1 class="text-center font-bold text-3xl mb-4">Welcome</h1>
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          id="email"
+          class="p-2 rounded border border-slate-300 focus:ouline-none"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="p-2 rounded border border-slate-300 focus:ouline-none"
+        />
+        <input
+          type="text"
+          placeholder="Phone"
+          name="phone"
+          id="phone"
+          class="p-2 rounded border border-slate-300 focus:ouline-none"
+        />
+        <button
+          class="bg-teal-700 text-slate-100 font-bold py-2 rounded hover:bg-teal-800 active:bg-teal-900"
+          id="sign-in"
+        >
+          Sign in
+        </button>
+        <div class="flex w-full gap-4">
+          <button
+            class="bg-red-700 text-slate-100 font-bold py-2 rounded grow hover:bg-red-800 active:bg-red-900"
+            type="button"
+            id="google"
+          >
+            Google Sign in
+          </button>
+          <button
+            class="bg-teal-700 text-slate-100 font-bold py-2 rounded grow hover:bg-teal-800 active:bg-teal-900"
+            type="button"
+            id="phone-btn"
+          >
+            Phone Sign in
+          </button>
+        </div>
+      </form>
+      <div class="absolute b-0 r-0" id="recaptcha-container"></div>
+    </div>
+  </body>
+</html>
