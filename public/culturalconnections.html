@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cultural Connections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script src="./scripts/firebase.js" type="module"></script>
+    <script src="./scripts/dashboard.js" defer></script>
+  </head>
+  <body>
+    <main class="container mx-auto my-10 max-w-[800px]">
+      <header
+        class="flex justify-between pb-4 mb-4 border-b-2 border-slate-300 md:px-0 px-4"
+      >
+        <h1>Welcome <span id="user" class="font-bold"></span></h1>
+        <button
+          id="log-out"
+          class="bg-slate-300 hover:bg-slate-200 rounded py-1 px-3 shadow-lg active:shadow-none"
+        >
+          Log out
+        </button>
+      </header>
+      <article>
+        <h2 class="text-3xl text-center mb-4">
+          Hello, I&apos;m <strong>Débora Serra</strong>
+        </h2>
+        <p class="text-center mb-10 text-lg">
+          Welcome to my cultural connections page!
+        </p>
+        <img
+          src="./assets/profile.jpg"
+          alt="Debora Serra"
+          style="
+            width: 300px;
+            height: 300px;
+            max-width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 24px;
+            display: block;
+          "
+        />
+        <section class="mb-4">
+          <p class="mb-2 text-lg">
+            The two cultural shock I experienced so far was:
+          </p>
+          <ol class="list-decimal list-inside">
+            <li>
+              The fact that I am able to walk down the street without fear of
+              being messed with
+            </li>
+            <li>
+              The houses decorated for Halloween. In Brazil we don&apos;t
+              celebrate it.
+            </li>
+          </ol>
+        </section>
+        <section class="mb-4">
+          <p class="mb-2 text-lg">
+            The two things I miss the most about my home country are:
+          </p>
+          <ol class="list-decimal list-inside">
+            <li>My dog, Fred Weasley</li>
+            <li>Having the security of a stable job.</li>
+          </ol>
+        </section>
+        <section class="mb-4">
+          <p class="mb-2 text-lg">
+            The things I love the most about Vancouver are:
+          </p>
+          <ol class="list-decimal list-inside">
+            <li>
+              The weather change. Seeing the trees changing colors from green to
+              yellow, orange and red are the most amazing things I&apos;ve ever
+              seen!
+            </li>
+            <li>
+              The cold! In my country there is no cold at all! Only hot and a
+              little less hot.
+            </li>
+          </ol>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
